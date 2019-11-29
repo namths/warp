@@ -11,4 +11,5 @@ POST: http://localhost:8088/plus
 }
 
 referrer is ID in app 1.1.1.1
+
 number is GB
