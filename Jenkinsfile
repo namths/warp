@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage("Compile") {
       steps {
-        sh "mvn clean compile"
+        sh "/var/jenkins_home/tools/maven/maven-3.6.3/mvn clean compile"
       }
     }
     stage("Unit test") {
       steps {
-        sh "mvn test"
+        sh "/var/jenkins_home/tools/maven/maven-3.6.3/mvn test"
       }
     }
     stage("Docker build") {
