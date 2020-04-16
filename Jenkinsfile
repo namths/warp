@@ -1,11 +1,5 @@
 pipeline {
   agent any
-  
-  environment {
-    portal-vimc-be = 'true'
-    DB_ENGINE    = 'sqlite'
-  }
-  
   stages {
     stage("Compile") {
       steps {
